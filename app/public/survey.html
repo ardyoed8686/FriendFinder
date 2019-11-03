@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Page - Friend Finder</title>
+    <title>Survey Page - Friend Finder</title>
     <!-- Latest compiled and minified CSS & JS -->
     <!-- bootstrap -->
     <link rel="stylesheet"
@@ -21,15 +21,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
     
-    <!-- <style>
-        h1 {
-            font-family: 'Noto Sans', sans-serif;
-            font-size: 24px;
+    <style>
+        h3 {
+            margin-top: 20px;
         }
-    </style> -->
+    </style>
 </head>
 <body>
     <div class="container">
+
     <!-- Content here -->
     <h2>Survey Questions</h2>
     <hr>
@@ -40,6 +40,7 @@
         <label for="exampleFormControlInput1">Link to Photo Image (Required)</label>
         <input type="text" class="form-control" id="photo" placeholder="">
     <hr>
+
     <!-- Question 1 -->
     <h3><strong>Question 1</strong></h3>
     <h5>You are inventive, find clever ways to do things.</h5>
@@ -66,7 +67,7 @@
                 <li class="active-result" data-option-array-index="3" style>3</li>
                 <li class="active-result" data-option-array-index="4" style>4</li>
                 <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
-            </ul></div>
+            </ul>
         </div>
     </div>
 
@@ -99,7 +100,6 @@
         </ul>
     </div>
     </div>
-    </div>
 
     <!-- Question 3 -->
     <h3><strong>Question 3</strong></h3>
@@ -130,7 +130,6 @@
             </ul>
         </div>
     </div>
-    </div>
 
     <!-- Question 4 -->
     <h3><strong>Question 4</strong></h3>
@@ -160,7 +159,6 @@
                 <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
             </ul>
         </div>
-    </div>
     </div>    
 
     <!-- Question 5 -->
@@ -192,7 +190,6 @@
             </ul>
         </div>
     </div>
-    </div>
     
     <!-- Question 6 -->
     <h3><strong>Question 6</strong></h3>
@@ -220,7 +217,7 @@
                 <li class="active-result" data-option-array-index="3" style>3</li>
                 <li class="active-result" data-option-array-index="4" style>4</li>
                 <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
-            </ul></div>
+            </ul>
         </div>
     </div>
 
@@ -253,7 +250,6 @@
         </ul>
     </div>
     </div>
-    </div>
 
     <!-- Question 8 -->
     <h3><strong>Question 8</strong></h3>
@@ -284,7 +280,6 @@
             </ul>
         </div>
     </div>
-    </div>
 
     <!-- Question 9 -->
     <h3><strong>Question 9</strong></h3>
@@ -314,7 +309,6 @@
                 <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
             </ul>
         </div>
-    </div>
     </div>    
 
     <!-- Question 10 -->
@@ -346,8 +340,42 @@
             </ul>
         </div>
     </div>
+    <br>
+    <br>
+    <!-- submit button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+        Submit</button>
+    <hr>
+    <footer>
+        <div class="container">
+            <p>
+            <a href="/api/friends">API Friends List</a>
+            |
+            <a href="https://github.com/ardyoed8686/FriendFinder">GitHub Repo</a>
+            </p>
+        </div>
+    </footer>
+    </div><!-- container div closing tag-->
+
+<!-- Modal -->
+<div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h2 class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+        <div class="modal-body">
+            <h2 id="match-name"></h2>
+            <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
     </div>
-    
-    </div><!-- container div clsing tag-->
+</div>
+
 </body>
 </html>
