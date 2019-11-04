@@ -1,5 +1,6 @@
 // You should save your application's data inside of app/data/friends.js as an array of objects. Each of these objects should roughly follow the format below.
-var userData = [{
+var userData = [
+    {
     "name":"Ahmed",
     "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
     "scores":[
@@ -14,6 +15,71 @@ var userData = [{
         4,
         1
       ]
-  }]
+  }, 
+  {
+    "name":"Denise",
+    "photo":"https://timesofindia.indiatimes.com/thumb/msid-67586673,width-800,height-600,resizemode-4/67586673.jpg",
+    "scores":[
+        4,
+        2,
+        4,
+        4,
+        3,
+        1,
+        5,
+        5,
+        3,
+        2
+      ]
+  }, 
+  {
+    "name":"Bob",
+    "photo":"https://i.pinimg.com/originals/c4/90/75/c4907577a372c21c3ea70cad4b59eb07.jpg",
+    "scores":[
+        4,
+        2,
+        4,
+        4,
+        3,
+        1,
+        5,
+        5,
+        3,
+        2
+      ]
+  }, 
+  {
+    "name":"Jen",
+    "photo":"https://sadanduseless.b-cdn.net/wp-content/uploads/2019/06/funny-dog-onesies2.jpg",
+    "scores":[
+        4,
+        2,
+        2,
+        4,
+        5,
+        1,
+        5,
+        4,
+        1,
+        2
+      ]
+  }, 
+  {
+    "name":"Jay",
+    "photo":"https://i.etsystatic.com/16231578/c/2406/1910/0/101/il/b519eb/1867970999/il_340x270.1867970999_qajq.jpg",
+    "scores":[
+        2,
+        2,
+        3,
+        5,
+        3,
+        2,
+        5,
+        5,
+        3,
+        1
+      ]
+  }
+]
 
   module.exports = userData
